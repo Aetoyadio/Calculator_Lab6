@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LAB6</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container" >
+        <center>
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button onclick="clearDisplay()">AC</button></td>
+                        <td onclick="toggleSign()">+/-</td>
+                        <td onclick="calculatePercentage()">%</td>
+                        <td><button onclick="appendToDisplay('/')">/</button></td>
+                        <td onclick="power(2)">x^2</td>
+                    </tr>
+                    <tr>
+                        <td onclick="appendToDisplay('7')">7</td>
+                        <td onclick="appendToDisplay('8')">8</td>
+                        <td onclick="appendToDisplay('9')">9</td>
+                        <td><button onclick="appendToDisplay('*')">*</button></td>
+                        <td onclick="power(3)">x^3</td>
+                    </tr>
+                    <tr>
+                        <td onclick="appendToDisplay('4')">4</td>
+                        <td onclick="appendToDisplay('5')">5</td>
+                        <td onclick="appendToDisplay('6')">6</td>
+                        <td><button onclick="appendToDisplay('-')">-</button></td>
+                        <td onclick="calculateSquareRoot()">√x</td>
+                    </tr>
+                    <tr>
+                        <td onclick="appendToDisplay('1')">1</td>
+                        <td onclick="appendToDisplay('2')">2</td>
+                        <td onclick="appendToDisplay('3')">3</td>
+                        <td onclick="appendToDisplay('+')">+</td>
+                        <td onclick="appendToDisplay('(')">(</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-radius: 50px;" onclick="appendToDisplay('0')">0</td>
+                        <td onclick="appendToDisplay('.')">,</td>
+                        <td onclick="calculateResult()">=</td>
+                        <td onclick="appendToDisplay(')')">)</td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
